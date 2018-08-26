@@ -19,12 +19,11 @@ a {
 }
 
 .container {
-    padding-top: 20px;
     padding-bottom: 50px;
 }
 
 .parent {
-    height: 97%;
+    height: 100%;
     display: flex; /* contexte sur le parent */
     flex-direction: column; /* direction d'affichage verticale */
     justify-content: center; /* alignement vertical */
@@ -63,12 +62,5 @@ a > i {
         max-width: 500px;
         margin: 1.75rem auto;
         min-width: 671px;
-    }
-}
-
-@media (max-width: 991px) {
-    .row {
-        text-align: center !important;
-        display: block !important;
     }
 }

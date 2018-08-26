@@ -14,14 +14,6 @@ a {
     border-bottom: solid #23272b 1px;
 }
 
-.bg-darker {
-    background-color: #23272b;
-}
-
-.container {
-    padding-bottom: 50px;
-}
-
 .parent {
     height: 100%;
     display: flex; /* contexte sur le parent */

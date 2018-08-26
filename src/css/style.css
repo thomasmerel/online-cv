@@ -64,3 +64,10 @@ a > i {
         min-width: 671px;
     }
 }
+
+@media (max-width: 991px) {
+    .row {
+        text-align: center !important;
+        display: block !important;
+    }
+}

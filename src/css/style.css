@@ -6,6 +6,10 @@ body,html {
     font-family: 'Abel', sans-serif !important;
 }
 
+a {
+    transition: 0.5s;
+}
+
 .navbar-custom {
     border-bottom: solid #23272b 1px;
 }
@@ -58,5 +62,12 @@ a > i {
         max-width: 500px;
         margin: 1.75rem auto;
         min-width: 671px;
+    }
+}
+
+@media (max-width: 991px) {
+    .row {
+        text-align: center !important;
+        display: block !important;
     }
 }

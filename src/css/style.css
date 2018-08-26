@@ -57,7 +57,7 @@ a > i {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .row {
         text-align: center !important;
         display: block !important;

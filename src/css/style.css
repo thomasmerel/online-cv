@@ -2,7 +2,7 @@ body,html {
     color: white;
     position: relative;
     background-image: url("../img/background.svg");
-    height: 97%;
+    height: 100%;
     font-family: 'Abel', sans-serif !important;
 }
 
@@ -24,7 +24,7 @@ a {
 }
 
 .parent {
-    height: 100%;
+    height: 97%;
     display: flex; /* contexte sur le parent */
     flex-direction: column; /* direction d'affichage verticale */
     justify-content: center; /* alignement vertical */

@@ -14,11 +14,11 @@
 
     <link rel="icon" type="image/png" href="src/img/crow.jpg"/>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css"
           integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/animate.css">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
@@ -77,7 +77,7 @@
                 </div>
                 <div class="col text-center">
                     <a href="#" data-clipboard-text="Vulture#9999" class="clipboard" data-toggle="tooltip"
-                       data-placement="bottom" title="Copy to clipboard">
+                       data-placement="bottom" title="Copy to clipboard" onclick="copyCp()">
                         <i class="fab fa-discord fa-4x"></i><br>
                         Vulture#9999
                     </a>
@@ -103,39 +103,14 @@
 </div>
 
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
-    <!--
-               \  /\  /\  /\  /\  /\  /\  /
-                \/  \/  \/  \/  \/  \/  \/
-                |                        |       Y       Y           AAAAAAAA
-                |                        |        Y     Y           A        A
-                |                        |         Y   Y            A        A
-                |                        |          Y Y             AAAAAAAAAA
-                | __----__      __----__ |           Y              A        A
-                |/        \    /        \|           Y              A        A
-                |          |  |          |           Y              A        A
-              --|\     *  /    \     *  /|--         Y              A        A
-             /  | --____--      --____-- |  \
-            | (-|         /    \         |-) |   RRRRRRR    IIIIIII   EEEEEEE   NN       N
-             \  |.        \____/        .|  /    R      R      I      E         N N      N
-              --/                        \--     R      R      I      E         N  N     N
-               /                          \      RRRRRRR       I      EEEEEEE   N   N    N
-               `--______________________--'      RR            I      E         N    N   N
-                  \_                  _/         R RR          I      E         N     N  N
-                    `---__      __---'           R   RR        I      E         N      N N
-                          `----'                 R     RR   IIIIIII   EEEEEEE   N       NN
-
-     -->
 </div>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+<script type="text/javascript" src="src/js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+<script type="text/javascript" src="src/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="src/js/bootstrap-notify.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 <script type="text/javascript" src="src/bower_components/EaselJS/lib/easeljs-0.8.1.min.js"></script>
 <script type="text/javascript" src="src/bower_components/PreloadJS/lib/preloadjs-0.6.1.min.js"></script>
@@ -152,8 +127,6 @@
 <script type="text/javascript" src="src/js/bomb/Menu.js"></script>
 <script type="text/javascript" src="src/js/bomb/InputEngine.js"></script>
 <script type="text/javascript" src="src/js/bomb/GameEngine.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 <script type="text/javascript" src="src/js/script.js"></script>
-
 </body>
 </html>

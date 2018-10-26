@@ -1,5 +1,11 @@
 const embed = document.getElementById('newsembed');
 
+$(function () {
+    new ClipboardJS('.clipboard');
+    $('[data-toggle="tooltip"]').tooltip();
+});
+
+
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 

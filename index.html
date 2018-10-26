@@ -24,8 +24,11 @@
 
 <body>
 
-<div class="parent">
-    <div class="enfant">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+    </header>
+
+    <main role="main" class="inner cover container">
         <div class="container content">
             <div class="row justify-content-md-center">
                 <h1>Thomas MEREL</h1>
@@ -42,50 +45,61 @@
 
         <div class="container-fluid content">
             <div class="row justify-content-md-center">
-                <div class="col-md-2 text-center">
+                <div class="col text-center">
                     <a href="mailto:thomas.merel.44@gmail.com" target="_blank">
                         <i class="fas fa-envelope-square fa-4x"></i><br>
                         thomas.merel.44@gmail.com
                     </a>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col text-center">
                     <a href="https://github.com/thomasmerel" target="_blank">
                         <i class="fab fa-github-square fa-4x"></i><br>
                         github.com/thomasmerel
                     </a>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col text-center">
                     <a href="https://www.linkedin.com/in/thomas-merel-72b4bb9b/" target="_blank">
                         <i class="fab fa-linkedin fa-4x"></i><br>
                         Thomas MEREL
                     </a>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col text-center">
                     <a href="https://steamcommunity.com/id/Vulture__/" target="_blank">
                         <i class="fab fa-steam-square fa-4x"></i><br>
                         id/Vulture__
                     </a>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col text-center">
                     <a href="https://twitter.com/Vulture___/" target="_blank">
                         <i class="fab fa-twitter-square fa-4x"></i><br>
                         @Vulture___
                     </a>
                 </div>
+                <div class="col text-center">
+                    <a href="#" data-clipboard-text="Vulture#9999" class="clipboard" data-toggle="tooltip"
+                       data-placement="bottom" title="Copy to clipboard">
+                        <i class="fab fa-discord fa-4x"></i><br>
+                        Vulture#9999
+                    </a>
+                </div>
+                <!--
+                <div class="col text-center">
+                    <a href="#">
+                        <i class="fas fa-file-pdf fa-4x"></i><br>
+                        My resume
+                    </a>
+                </div>
+                -->
             </div>
         </div>
-    </div>
-</div>
+    </main>
 
-<div class="bg-darker">
-    <div class="container-fluid">
-        <div class="row fixed-bottom text-center">
-            <div class="col">
-                <h6 class="subtitle">© Copyright 2018 - Thomas MEREL
-                </h6>
-            </div>
+    <footer class="mastfoot mt-auto">
+        <div class="inner text-center">
+            <h6 class="subtitle">© Copyright 2018 - Thomas MEREL
+            </h6>
         </div>
-    </div>
+    </footer>
 </div>
 
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
@@ -122,6 +136,7 @@
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 <script type="text/javascript" src="src/bower_components/EaselJS/lib/easeljs-0.8.1.min.js"></script>
 <script type="text/javascript" src="src/bower_components/PreloadJS/lib/preloadjs-0.6.1.min.js"></script>
 <script type="text/javascript" src="src/bower_components/SoundJS/lib/soundjs-0.6.1.min.js"></script>

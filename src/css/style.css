@@ -1,8 +1,8 @@
 body,html {
     color: white;
     position: relative;
-    background-image: url("../img/background.svg");
-	background-size: cover;
+    background-image: linear-gradient(#4ac5cd, #ba55d3);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;

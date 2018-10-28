@@ -3,6 +3,8 @@ body,html {
     position: relative;
     background-image: url("../img/background.svg");
 	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100%;
     font-family: 'Abel', sans-serif !important;
 }
@@ -63,6 +65,19 @@ a > i {
         text-align: center !important;
         display: block !important;
     }
+}
+
+.subtitle {
+    padding-top: 13px;
+    margin-bottom: -5px;
+}
+
+.contact {
+    margin-bottom: 10px;
+}
+
+.project {
+    text-decoration: underline;
 }
 
 .alert-dark {

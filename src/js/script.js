@@ -4,8 +4,9 @@ $(function () {
     new ClipboardJS(".clipboard");
     $('[data-toggle="tooltip"]').tooltip();
 
-    $.scrollify({
-        section: ".slide",
+    ifScrollify();
+    $(window).on('resize', function(){
+        ifScrollify();
     });
 
     $("a[href*='#']:not([href='#'])").click(function() {
@@ -21,6 +22,17 @@ $(function () {
         }
     });
 });
+
+function ifScrollify() {
+    if ($(window).width() < 767) {
+        $.scrollify.destroy();
+    }
+    else {
+        $.scrollify({
+            section: ".slide",
+        });
+    }
+}
 
 function copyCp() {
     if(timeout === false) {

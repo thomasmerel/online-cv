@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
-    font-family: 'Abel', sans-serif !important;
 }
 
 a {
@@ -28,13 +27,13 @@ h6 {
     font-size: small;
 }
 
-a {
+.homeslide a {
     color: white;
     text-decoration: none;
 
 }
 
-a:hover {
+.homeslide a:hover {
     color: #343a40;
     text-decoration: none;
 }
@@ -64,6 +63,13 @@ a > i {
     .row {
         text-align: center !important;
         display: block !important;
+    }
+    .scrolldiv {
+        display: none !important;
+    }
+
+    .thumbnail {
+        display: none !important;
     }
 }
 
@@ -95,7 +101,7 @@ a > i {
     justify-content: center;
     align-items: center;
     position: absolute;
-    width: 98%;
+    width: 99.9%;
     margin-top: -50px;
 }
 
@@ -181,11 +187,77 @@ a > i {
     }
 }
 
-.details h1 {
+.font-1 {
+    font-family: 'Abel', sans-serif !important;
+}
+.font-2 {
     font-family: 'Boogaloo', sans-serif !important;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.progress {
+    height: 5px;
+}
+.progress-bar {
+    background: -webkit-linear-gradient(left, #4ac5cd 0%,#ba55d3 100%); /* Chrome10-25,Safari5.1-6 */
+}
+
+.lg-top {
     margin-top: 60px;
 }
 
 .details .row {
     padding-top: 15px;
+}
+
+.bigger {
+    font-size: 3rem;
+}
+
+.details {
+    color: #343a40 !important;
+}
+
+.details hr {
+    background-image: linear-gradient(90deg, #4ac5cd, #ba55d3);
+    border: 0;
+    height: 1px;
+}
+
+.details a {
+    color: #343a40;
+    text-decoration: none;
+
+}
+
+.details a:hover {
+    text-decoration: none;
+}
+
+.linked {
+    cursor: pointer;
+    color: #343a40;
+}
+
+.linked:hover {
+    text-decoration: none;
+}
+
+.thumbnail {
+    max-width: 200px;
+}
+
+.projects-thumbnails img {
+    transition: filter .25s ease-in-out;
+    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%); /* FF 35+ */
+}
+
+.projects-thumbnails:hover img {
+    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(0%); /* FF 35+ */
 }

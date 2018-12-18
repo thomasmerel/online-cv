@@ -71,6 +71,10 @@ a > i {
     .thumbnail {
         display: none !important;
     }
+
+    .lg-top {
+        margin-top: 15px;
+    }
 }
 
 .subtitle {

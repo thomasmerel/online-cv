@@ -33,8 +33,15 @@ h4 {
 }
 */
 
+.box {
+    border: 3px solid #4ac5cd;
+    border-image-source: linear-gradient(#4ac5cd, #ba55d3);
+    border-image-slice: 3;
+    border-radius: 2px;
+}
+
 .text-gradient {
-    width: fit-content;
+    display: inline-block;
     background: linear-gradient(90deg, #4ac5cd, #ba55d3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -38,6 +38,7 @@ h4 {
     background: linear-gradient(90deg, #4ac5cd, #ba55d3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 }
 
 .homeslide a {

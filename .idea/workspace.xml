@@ -98,7 +98,7 @@
     </findStrings>
     <replaceStrings>
       <replace>fa-4x</replace>
-      <replace>rel=&quot;noopener&quot; target=&quot;_blank&quot;</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -128,7 +128,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>

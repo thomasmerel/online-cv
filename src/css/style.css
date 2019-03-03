@@ -375,12 +375,14 @@ a > i {
     width: 300px;
     float: left;
     text-align: right;
+    z-index: 15;
 }
 
 .direction-r {
     position: relative;
     width: 300px;
     float: right;
+    z-index: 15;
 }
 
 .flag-wrapper {
@@ -449,35 +451,6 @@ a > i {
     left: -36px;
 }
 
-/*
-.direction-l .flag:after {
-    content: "";
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    height: 0;
-    width: 0;
-    margin-top: -8px;
-    border: solid transparent;
-    border-left-color: white;
-    border-width: 8px;
-    pointer-events: none;
-}
-
-.direction-r .flag:after {
-    content: "";
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    height: 0;
-    width: 0;
-    margin-top: -8px;
-    border: solid transparent;
-    border-right-color: white;
-    border-width: 8px;
-    pointer-events: none;
-}
-*/
 .time-wrapper {
     display: inline;
 

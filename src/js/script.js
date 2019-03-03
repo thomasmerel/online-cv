@@ -4,9 +4,14 @@ $(function () {
     new ClipboardJS(".clipboard");
     $('[data-toggle="tooltip"]').tooltip();
 
-    ifScrollify();
-    $(window).on('resize', function () {
-        ifScrollify();
+    $.scrollify({
+        section: ".slide",
+    });
+    $.scrollify.disable();
+
+    AOS.init({
+        duration: 500,
+        once: true
     });
 
     $("a[href*='#']:not([href='#'])").click(function () {
@@ -28,17 +33,6 @@ $(function () {
         plusSlides(1);
     }, 5000);
 });
-
-function ifScrollify() {
-    if ($(window).width() < 767) {
-        $.scrollify.destroy();
-    }
-    else {
-        $.scrollify({
-            section: ".slide",
-        });
-    }
-}
 
 function copyCp() {
     if (timeout === false) {

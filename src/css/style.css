@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .homeslide {
     color: white;
     position: relative;

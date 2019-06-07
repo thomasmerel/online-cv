@@ -52,6 +52,14 @@ h4 {
     text-align: center;
 }
 
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(180deg, #4ac5cd, #ba55d3);
+    border-radius: 5px;
+    padding: 20px;
+}
+
 .homeslide a {
     color: white;
     text-decoration: none;

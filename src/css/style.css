@@ -469,9 +469,8 @@ a > i {
 
 .time-wrapper {
     display: inline;
-
-    line-height: 1em;
-    font-size: 0.66666em;
+    line-height: 1.4em;
+    font-size: 0.8em;
     color: #343a40;
     vertical-align: middle;
 }
@@ -492,8 +491,7 @@ a > i {
 
 .desc {
     margin: 1em 0.75em 0 0;
-
-    font-size: 0.77777em;
+    font-size: 0.84em;
     font-style: italic;
     line-height: 1.5em;
 }

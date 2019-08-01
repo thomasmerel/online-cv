@@ -1,4 +1,4 @@
-var timeout = false;
+let timeout = false;
 
 $(function () {
     new ClipboardJS(".clipboard");
@@ -19,7 +19,7 @@ $(function () {
             location.hostname == this.hostname
             && this.pathname.replace(/^\//, "") == location.pathname.replace(/^\//, "")
         ) {
-            var anchor = $(this.hash);
+            let anchor = $(this.hash);
             anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) + "]");
             if (anchor.length) {
                 $("html, body").animate({scrollTop: anchor.offset().top}, 1100);
@@ -62,14 +62,14 @@ function copyCp() {
 }
 
 function calcAge() { // birthday is a date
-    var birthday = new Date('1994-03-14');
-    var ageDifMs = Date.now() - birthday.getTime();
-    var ageDate = new Date(ageDifMs); // miliseconds from epoch
-    var age = Math.abs(ageDate.getUTCFullYear() - 1970);
+    let birthday = new Date('1994-03-14');
+    let ageDifMs = Date.now() - birthday.getTime();
+    let ageDate = new Date(ageDifMs); // miliseconds from epoch
+    let age = Math.abs(ageDate.getUTCFullYear() - 1970);
     $('#age').html(age)
 }
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -81,8 +81,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -98,3 +98,29 @@ function showSlides(n) {
         $(slides[slideIndex - 1]).fadeIn('slow')
     }, 600);
 }
+
+let k = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65],
+    n = 0;
+$(document).keydown(function (e) {
+    if (e.keyCode === k[n++]) {
+        if (n === k.length) {
+
+            let home = $('#home');
+
+            home.css(
+                'background-image', 
+                "repeating-linear-gradient(45deg, #003b6f, #003b6f 20px, #c1c3c6 20px, #c1c3c6 35px )"
+            );
+
+            home.prepend(
+                '<img id="ravenclaw" alt="Ravenclaw Emblem" ' +
+                'style="position:absolute;width: 190px;margin: 10px" ' +
+                'src="https://vignette.wikia.nocookie.net/jspotter/images/e/e6/Ravenclaw_Crest_Painting.png"/>'
+            );
+            n = 0;
+            return false;
+        }
+    } else {
+        n = 0;
+    }
+});

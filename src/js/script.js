@@ -109,7 +109,7 @@ $(document).keydown(function (e) {
 
             home.css(
                 'background-image', 
-                "repeating-linear-gradient(45deg, #003b6f, #003b6f 20px, #c1c3c6 20px, #c1c3c6 35px )"
+                "repeating-linear-gradient(45deg, #003b6f, #003b6f 100px, #c1c3c6 100px, #c1c3c6 190px )"
             );
 
             home.prepend(

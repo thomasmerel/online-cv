@@ -1,3 +1,8 @@
+:root {
+    --gradient-first: #4ac5cd;
+    --gradient-second: #ba55d3;
+}
+
 .row {
     overflow-x: hidden !important;
 }
@@ -5,7 +10,7 @@
 .homeslide {
     color: white;
     position: relative;
-    background-image: linear-gradient(#4ac5cd, #ba55d3);
+    background-image: linear-gradient(var(--gradient-first), var(--gradient-second));
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -39,14 +44,14 @@ h4 {
 
 .box {
     border: 3px solid #4ac5cd;
-    border-image-source: linear-gradient(#4ac5cd, #ba55d3);
+    border-image-source: linear-gradient(var(--gradient-first), var(--gradient-second));
     border-image-slice: 3;
     border-radius: 2px;
 }
 
 .text-gradient {
     display: inline-block;
-    background: linear-gradient(90deg, #4ac5cd, #ba55d3);
+    background: linear-gradient(90deg, var(--gradient-first), var(--gradient-second));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -55,7 +60,7 @@ h4 {
 .profile-pic {
     width: 200px;
     height: 200px;
-    background: linear-gradient(180deg, #4ac5cd, #ba55d3);
+    background: linear-gradient(180deg, var(--gradient-first), var(--gradient-second));
     border-radius: 5px;
     padding: 20px;
 }
@@ -247,7 +252,7 @@ a > i {
 }
 
 .progress-bar {
-    background: -webkit-linear-gradient(left, #4ac5cd 0%, #ba55d3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(left, var(--gradient-first) 0%, var(--gradient-second) 100%); /* Chrome10-25,Safari5.1-6 */
 }
 
 .lg-top {
@@ -267,7 +272,7 @@ a > i {
 }
 
 .separator > hr {
-    background-image: linear-gradient(90deg, #4ac5cd, #ba55d3);
+    background-image: linear-gradient(90deg, var(--gradient-first), var(--gradient-second));
     border: 0;
     height: 1px;
 }
@@ -364,12 +369,12 @@ a > i {
     height: 100%;
     margin-left: -3px;
     background: rgb(80, 80, 80);
-    background: -moz-linear-gradient(top, #4ac5cd, #ba55d3);
+    background: -moz-linear-gradient(top, var(--gradient-first), var(--gradient-second));
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(30, 87, 153, 1)), color-stop(100%, rgba(125, 185, 232, 1)));
-    background: -webkit-linear-gradient(top, #4ac5cd, #ba55d3);
-    background: -o-linear-gradient(top, #4ac5cd, #ba55d3);
-    background: -ms-linear-gradient(top, #4ac5cd, #ba55d3);
-    background: linear-gradient(to bottom, #4ac5cd, #ba55d3);
+    background: -webkit-linear-gradient(top, var(--gradient-first), var(--gradient-second));
+    background: -o-linear-gradient(top, var(--gradient-first), var(--gradient-second));
+    background: -ms-linear-gradient(top, var(--gradient-first), var(--gradient-second));
+    background: linear-gradient(to bottom, var(--gradient-first), var(--gradient-second));
     border-radius: 3px;
     z-index: 5;
 }

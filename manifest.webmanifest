@@ -1,5 +1,7 @@
 {
   "name": "Thomas MERELs website",
+  "url": "https://thomas-merel.fr/",
+  "id": "thomasmerelwebsite",
   "short_name": "Thomas MEREL",
   "start_url": "./?utm_source=web_app_manifest",
   "display": "standalone",

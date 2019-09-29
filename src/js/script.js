@@ -112,10 +112,14 @@ $(document).keydown(function (e) {
                 "repeating-linear-gradient(45deg, #003b6f, #003b6f 100px, #c1c3c6 100px, #c1c3c6 190px )"
             );
 
+            let root = document.documentElement;
+            root.style.setProperty('--gradient-first', "#003b6f");
+            root.style.setProperty('--gradient-second', "#c1c3c6");
+
             home.prepend(
                 '<img id="ravenclaw" alt="Ravenclaw Emblem" ' +
                 'style="position:absolute;width: 190px;margin: 10px" ' +
-                'src="https://vignette.wikia.nocookie.net/jspotter/images/e/e6/Ravenclaw_Crest_Painting.png"/>'
+                'src="src/img/ravenclaw.png"/>'
             );
             n = 0;
             return false;

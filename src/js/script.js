@@ -114,7 +114,7 @@ $(document).keydown(function (e) {
 
             let root = document.documentElement;
             root.style.setProperty('--gradient-first', "#003b6f");
-            root.style.setProperty('--gradient-second', "#c1c3c6");
+            root.style.setProperty('--gradient-second', "#003b6f");
 
             home.prepend(
                 '<img id="ravenclaw" alt="Ravenclaw Emblem" ' +

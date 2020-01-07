@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>TEST</title>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+	function getRandomColor() {
+		let letters = '0123456789ABCDEF';
+		let color = '#';
+		for (let i = 0; i < 6; i++) {
+			color += letters[Math.floor(Math.random() * 16)];
+		}
+		return color;
+	}
+	
+	let height = window.innerHeight;
+	let nbBars = height / 11 - 2;
+
+	for (let i = 0; i < nbBars; i++) {
+		let color = getRandomColor()
+		let node = document.createElement("div");
+		node.setAttribute('style', 'border-top:1px solid '+color+';margin-bottom: 10px;')
+		document.getElementById("content").appendChild(node); 
+	}
+  </script>
+</body>
+</html>
